@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYP</title>
+    <link rel="icon" type="image/png" href="moneypoop.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💩 PAYP - Paid As You Poop 💰</h1>
+        <div class="description">
+            Calculate what you earn whilst pooping at work.<br>
+            Roll down your pants and get to work! 💪
+        </div>
+        
+        <div class="salary-input">
+            <input type="number" id="salary" placeholder="Enter your salary">
+            <select id="salaryPeriod">
+                <option value="annual">Annual</option>
+                <option value="monthly">Monthly</option>
+                <option value="weekly">Weekly</option>
+            </select>
+            <select id="currency">
+                <option value="GBP">GBP (£)</option>
+                <option value="EUR">EUR (€)</option>
+                <option value="USD">USD ($)</option>
+            </select>
+        </div>
+
+        <div class="timer-container">
+            <div id="timer">00:00:00</div>
+            <button id="startStop">Start Pooping</button>
+        </div>
+
+        <div class="current-session">
+            <h2>Current Session</h2>
+            <p>Money earned: <span id="currentEarnings">£0.00</span></p>
+        </div>
+
+        <div class="stats">
+            <h2>Your Poop Stats</h2>
+            <p>Total poops: <span id="totalPoops">0</span></p>
+            <p>Total time: <span id="totalTime">0 minutes</span></p>
+            <p>Total earned: <span id="totalEarned">£0.00</span></p>
+            
+            <div class="chart-container">
+                <canvas id="weeklyChart"></canvas>
+            </div>
+            
+            <h2>Rewards</h2>
+            <div id="funFacts"></div>
+        </div>
+
+        <div class="disclaimer">
+            For entertainment purposes only. All calculations are approximate.
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
